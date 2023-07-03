@@ -2,15 +2,13 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  position: relative;
 }
-.carousel-img-size {
-  height: 100vh !important;
-}
+/* nav bar */
 nav {
   height: 125px;
   width: 100%;
   background: rgba(2, 2, 2, 0.8);
+  color: #ededeb;
 }
 .navbar-brand {
   padding: 0 50px;
@@ -30,7 +28,8 @@ nav ul li a:hover {
 .order-btn {
   background-color: #ff7a00;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
+  height: 50px !important;
   text-align: center;
   margin-right: 60px;
   margin-left: 10%;
@@ -45,15 +44,18 @@ nav ul li a:hover {
   background-color: #e66e00;
   color: white;
 }
+
+/* icons style */
 .item {
-  position: relative;
+  position: absolute;
   margin-top: 21%;
-  margin-left: 110%;
+  margin-left: 96%;
+  z-index: 1;
 }
 .icon a {
   font-size: 30px;
   border-radius: 20% 0 0 20%;
-  background-color: #ff7a00;
+  background-color: #ff7a00 !important;
   color: white;
   padding: 2px 5px;
   line-height: 54px;
@@ -63,126 +65,121 @@ nav ul li a:hover {
   background-color: #e66e00;
   color: white;
 }
-.stroke-transparent {
-  -webkit-text-stroke: 1.3px white;
-  -webkit-text-fill-color: transparent;
+
+/* main section  */
+.main {
+  background: url("images/IMG-20230329-WA0023.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
-.card1 {
-  width: 350px;
-  height: 350px;
-  position: absolute;
-  margin-left: 40px !important;
-  margin-top: 113px !important;
-  background: none;
-  border: none;
-  z-index: -1;
-  opacity: 0.8;
+.main-content {
+  background-color: #000000b4;
+  height: 650px;
+  text-align: center;
+  padding-top: 270px;
 }
-.first-card {
-  margin-top: 73px;
-  margin-right: 0;
-  margin-bottom: 80px;
-  margin-left: 60%;
+.main-content h3 {
+  color: #fff;
+  font-size: 60px;
 }
-.text1 {
-  margin-left: 10%;
-  margin-top: 110px;
-  text-align: left;
+.main-content h2 {
+  color: #ff7a00;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
-.text1 h1 {
-  font-size: 2.3rem;
-  font-weight: bolder;
-}
-.box1 {
-  width: 950px;
-  height: 225px;
-  border: none;
-  margin-left: 8%;
-  margin-top: 40px;
-  padding-left: 30px;
-  padding-top: 15px;
-  background-color: #edebeb;
-  border-radius: 1.7%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
-  font-size: 14.5px;
-  line-height: 1.8;
-  text-align: justify;
-}
-.second-card {
-  margin-top: 240px;
-  margin-right: 20%;
-  margin-bottom: 80px;
-  margin-left: 0;
-}
-.card2 {
+/* main ends */
+
+.img1 {
   width: 300px;
   height: 300px;
   position: absolute;
-  margin-left: 480px !important;
-  margin-top: 170px !important;
-  background: none;
-  border: none;
-  z-index: -1;
-  opacity: 0.8;
+  top: 700px;
+  left: 110px;
+  background-color: none;
 }
-.text2 {
-  margin-right: 21%;
-  margin-top: 280px;
-}
-.text2 h1 {
-  font-size: 2.3rem;
-  font-weight: bold;
-}
-.box2 {
-  width: 950px;
-  height: 225px;
-  border: none;
-  margin-left: 21%;
-  margin-top: 82px;
-  background-color: #edebeb;
-  border-radius: 1.7%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
-
-  line-height: 1.8;
-}
-.box2 p {
-  font-size: 14.5px;
-  padding: 35px 165px 35px 180px;
-  text-align: justify;
-}
-.carousel-indicators {
-  list-style-type: none;
-}
-.carousel-indicators [data-bs-target] {
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  background-color: transparent;
-  margin: 0px 15px;
-}
-.carousel-indicators li {
-  border-radius: 50%;
-  padding: 4px;
-  position: relative;
-  margin: 0 15px;
-  opacity: 1;
-}
-.carousel-indicators li:after {
-  border-radius: 50%;
-  padding: 10px;
-  border: 2px solid #fff;
+.img2 {
+  width: 300px;
+  height: 300px;
   position: absolute;
-  content: "";
-  top: -7px;
-  bottom: -7px;
-  left: -7px;
-  right: -7px;
-  display: block;
-}
-.carousel-indicators li.active {
-  background-color: white;
+  bottom: -830px;
+  right: 130px;
+  background-color: none;
 }
 
+/* CSS styling for the card */
+
+.card {
+  margin: 150px;
+  margin-left: 300px;
+  width: 750px;
+  height: 580px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 30px 100px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  align-self: center;
+  color: #555;
+}
+
+.card-title {
+  color: #ff7a00;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  margin-top: 20px;
+}
+.address {
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 30px;
+}
+.contant {
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-left: 18px;
+}
+.number {
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 60px;
+}
+
+.icons {
+  margin: 40px;
+}
+.icons a {
+  display: inline-block;
+  height: 65px;
+  width: 65px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  padding: 10px;
+}
+.icons i {
+  margin-top: 8px;
+  font-size: 30px;
+  text-align: center;
+}
+.strike-transparent {
+  -webkit-text-stroke: 1.3px black !important;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ----footer--- */
 .footer {
   background: url("images/IMG-20230329-WA0024.jpg");
   background-size: cover;
@@ -190,6 +187,7 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   height: auto;
   max-height: 500px;
+  width: 100%;
   font-family: sans-serif;
   background-attachment: scroll;
 }
@@ -213,10 +211,10 @@ nav ul li a:hover {
   background: none;
   position: relative;
   top: 167px;
-  left: -85px;
+  left: 410px;
 }
 .stroke-transparent {
-  -webkit-text-stroke: 1.3px white;
+  -webkit-text-stroke: 1.3px white !important;
   -webkit-text-fill-color: transparent;
 }
 
@@ -310,4 +308,41 @@ nav ul li a:hover {
 .location-box a {
   color: #fff;
   text-decoration: none;
+}
+
+/* responsive style */
+@media screen and (max-width: 600px) {
+  .main {
+    width: 100%;
+    height: auto;
+  }
+  .main-content h3 {
+    font-size: 30px;
+  }
+  .main-content h2 {
+    color: #ff7a00;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .footer {
+    height: auto;
+  }
+  .footer-content {
+    height: fit-content;
+  }
+  .footer-box {
+    display: block;
+  }
+  #footer-img {
+    left: 25px;
+    width: 80%;
+    top: 100px;
+  }
+  #logo {
+    margin-left: 0;
+  }
+  .contact ul {
+    margin-left: 0px;
+    padding: 0px;
+  }
 }
